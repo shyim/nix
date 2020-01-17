@@ -2,10 +2,10 @@
 
 {
   nix = {
-    binaryCaches = [ "https://cache.nixos.org" "https://snix.ovh" ];
+    binaryCaches = [ "https://cache.nixos.org" "s3://nix?scheme=https&endpoint=s3-minio-shyim.cloud.okteto.net" ];
     binaryCachePublicKeys = [
       "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
-      "snix.ovh:ALIRUOtoiM/NKfVaL+I+AFU9/BYDOqBbm081csf8Xz0="
+      "shyim.cachix.org-1:RVZnQibwN/wRloBNV0EJjr/guF688VaHI37VFLIgYgI="
     ];
   };
 }

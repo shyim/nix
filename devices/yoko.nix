@@ -4,7 +4,7 @@
   imports = [
     ../modules/base
     ../modules/desktop
-    ../modules/desktop/manager/pantheon.nix
+    ../modules/desktop/manager/i3.nix
   ];
 
   boot.loader.grub.enable = true;
