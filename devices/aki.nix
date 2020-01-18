@@ -19,12 +19,11 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.grub.gfxmodeEfi = "1024x768";
 
-  boot.initrd.luks.devices = [{
-    name = "root";
+  boot.initrd.luks.devices.root = {
     device = "/dev/disk/by-uuid/357e67b2-546d-4632-b197-b03c6facf271";
     preLVM = true;
     allowDiscards = true;
-  }];
+  };
 
   networking.hostName = "aki";
   console.keyMap = "de";
@@ -35,6 +34,11 @@
   hardware.bumblebee.enable = true;
   hardware.bumblebee.connectDisplay = true;
 
-  virtualisation.virtualbox.host.enable = true;
-  users.extraGroups.vboxusers.members = [ "shyim" ];
+  programs.adb.enable = true;
+  services.fwupd.enable = true;
+
+  hardware.cpu.intel.updateMicrocode = true;
+  environment.systemPackages = with pkgs; [
+    shyim.ncspot
+  ];
 }
