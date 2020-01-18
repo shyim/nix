@@ -5,7 +5,6 @@
   environment.systemPackages = with pkgs; [
     docker
     docker-compose
-    shyim.phpstorm
     kbfs
     keybase
     keybase-gui
@@ -19,19 +18,25 @@
     gnupg
     insomnia
     xclip
-    travis
-    spotify
-    shyim.swdc
-    rclone
-    nixops
     gnumake
     terraform
     ffsend
     shellcheck
     fzf
     tldr
+    nixfmt
     kubectl
+    shyim.phpstorm
+    shyim.swdc
+    shyim.ncspot
   ];
 
-  fonts.fonts = with pkgs; [ noto-fonts noto-fonts-emoji source-sans-pro ];
+  console.font = lib.mkForce "Fire Code";
+
+  fonts.fonts = with pkgs; [
+    noto-fonts
+    noto-fonts-emoji
+    source-sans-pro
+    fira-code
+  ];
 }

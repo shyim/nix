@@ -38,7 +38,4 @@
   services.fwupd.enable = true;
 
   hardware.cpu.intel.updateMicrocode = true;
-  environment.systemPackages = with pkgs; [
-    shyim.ncspot
-  ];
 }

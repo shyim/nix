@@ -5,7 +5,10 @@
     xserver = {
       enable = true;
       windowManager = {
-        i3 = { enable = true; };
+        i3 = {
+          enable = true;
+          package = pkgs.i3-gaps;
+        };
       };
 
       displayManager = {
@@ -17,18 +20,19 @@
           };
         };
       };
-      desktopManager = {
-        xterm = { enable = false; };
-      };
+      desktopManager = { xterm = { enable = false; }; };
     };
 
     gnome3 = { gnome-keyring = { enable = true; }; };
   };
 
-  fonts.fonts = with pkgs; [ font-awesome_5 ];
+  fonts.fonts = with pkgs; [ dejavu_fonts nerdfonts ];
 
   environment.systemPackages = with pkgs; [
-    (polybar.override { i3Support = true; })
+    (polybar.override {
+      i3Support = true;
+      pulseSupport = true;
+    })
     rofi
     arandr
     pavucontrol
