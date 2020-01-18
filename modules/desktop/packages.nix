@@ -12,7 +12,7 @@
     google-chrome
     firefox
     thunderbird
-    vscode-ext
+    vscode
     php74
     php74Packages.composer
     nodejs-13_x
@@ -30,6 +30,7 @@
     shellcheck
     fzf
     tldr
+    kubectl
   ];
 
   fonts.fonts = with pkgs; [ noto-fonts noto-fonts-emoji source-sans-pro ];

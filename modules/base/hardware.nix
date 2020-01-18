@@ -15,6 +15,8 @@
       "no_stf_barrier"
       "mds=off"
       "mitigations=off"
+      "net.ifnames=0"
+      "biosdevname=0"
     ];
   };
 

@@ -14,5 +14,6 @@
     bat
     lsd
     tmux
+    starship
   ];
 }
