@@ -10,7 +10,6 @@
     keybase-gui
     google-chrome
     firefox
-    thunderbird
     vscode
     php74
     php74Packages.composer
@@ -29,6 +28,7 @@
     shyim.phpstorm
     shyim.swdc
     shyim.ncspot
+    xorg.xhost
   ];
 
   console.font = lib.mkForce "Fire Code";
