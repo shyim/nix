@@ -15,6 +15,7 @@
       support32Bit = true;
     };
   };
+
   services.blueman.enable = true;
 
   # Systemd stop job timeout.
@@ -24,6 +25,7 @@
     DefaultTimeoutStartSec=10s
     DefaultTimeoutStopSec=10s
   '';
+
   security.pam.loginLimits = [{
     domain = "*";
     type = "hard";

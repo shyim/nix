@@ -2,7 +2,7 @@
 
 {
   boot = {
-    kernelPackages = pkgs.linuxPackages_5_4;
+    kernelPackages = pkgs.linuxPackages_5_5;
     cleanTmpDir = true;
     kernelParams = [
       "noibrs"

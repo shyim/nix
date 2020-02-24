@@ -12,5 +12,5 @@
     desktopManager = { gnome3 = { enable = true; }; };
   };
 
-  services.dbus.packages = with pkgs; [ gnome3.dconf gnome2.GConf ];
+  services.dbus.packages = with pkgs; [ gnome3.dconf gnome2.GConf arc-theme arc-icon-theme ];
 }
