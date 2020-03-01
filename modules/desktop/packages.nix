@@ -23,7 +23,6 @@
     shellcheck
     fzf
     tldr
-    nixfmt
     kubectl
     shyim.phpstorm
     shyim.swdc
