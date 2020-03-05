@@ -25,8 +25,9 @@
     allowDiscards = true;
   };
 
+  i18n.consoleKeyMap = "de";
+
   networking.hostName = "aki";
-  console.keyMap = "de";
   services.xserver.layout = "de";
 
   boot.kernelParams = [ "acpi_rev_override" ];

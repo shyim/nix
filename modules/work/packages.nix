@@ -7,7 +7,6 @@
     openvpn
     ansible
     go-jira
-    php74Packages.phpstan
     zoom-us
   ];
 }

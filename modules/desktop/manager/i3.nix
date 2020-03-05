@@ -5,14 +5,14 @@
     xserver = {
       enable = true;
       windowManager = {
-        i3 = {
+        default = "i3";
+        i3 = { 
           enable = true;
           package = pkgs.i3-gaps;
         };
       };
 
       displayManager = {
-        defaultSession = "none+i3";
         lightdm = {
           autoLogin = {
             enable = true;
@@ -20,13 +20,20 @@
           };
         };
       };
-      desktopManager = { xterm = { enable = false; }; };
+      desktopManager = {
+        default = "none";
+        xterm = { enable = false; };
+      };
     };
+
+    keybase = { enable = true; };
+
+    kbfs = { enable = true; };
 
     gnome3 = { gnome-keyring = { enable = true; }; };
   };
 
-  fonts.fonts = with pkgs; [ dejavu_fonts nerdfonts ];
+  fonts.fonts = with pkgs; [ dejavu_fonts ];
 
   environment.systemPackages = with pkgs; [
     (polybar.override {
