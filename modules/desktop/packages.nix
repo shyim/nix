@@ -31,6 +31,7 @@ in {
     shyim.swdc
     #shyim.ncspot
     xorg.xhost
+    wakatime
   ];
 
   fonts.fonts = with pkgs; [
