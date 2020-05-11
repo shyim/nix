@@ -21,17 +21,13 @@ in {
     insomnia
     xclip
     gnumake
-    terraform
-    ffsend
     shellcheck
     fzf
-    tldr
-    kubectl
     shyim.phpstorm
     shyim.swdc
     #shyim.ncspot
     xorg.xhost
-    wakatime
+    spotify
   ];
 
   fonts.fonts = with pkgs; [

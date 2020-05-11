@@ -9,7 +9,7 @@
             peers = [
                 {
                     publicKey = "cujM0Bf/zKM3K/KzrThO6WyBs/AfAJNcJymy7/nNljA=";
-                    endpoint = "5.9.79.62:51820";
+                    endpoint = "flareon.shyim.de:51820";
                     allowedIPs = [ "10.10.0.1" ];
                 }
             ];

@@ -4,7 +4,6 @@ let
   path = pkgs.lib.concatStringsSep ":" [
     "$HOME/go/bin"
     "$HOME/.vpn-tool/bin"
-    "$HOME/.config/nix-cache/"
     "$HOME/.composer/vendor/bin"
     "$HOME/.npm-packages/bin"
     "$PATH"
