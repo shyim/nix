@@ -16,7 +16,7 @@ in {
     vscode
     unstable.php74
     unstable.php74Packages.composer
-    unstable.nodejs-13_x
+    nodejs
     gnupg
     insomnia
     xclip
@@ -25,9 +25,9 @@ in {
     fzf
     shyim.phpstorm
     shyim.swdc
-    #shyim.ncspot
     xorg.xhost
     spotify
+    discord
   ];
 
   fonts.fonts = with pkgs; [
