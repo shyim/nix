@@ -1,9 +1,6 @@
 { config, lib, pkgs, ... }:
 
-let
-  unstable = import <nixos-unstable> {};
-
-in {
+{
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     docker
@@ -14,9 +11,9 @@ in {
     google-chrome
     firefox
     vscode
-    unstable.php74
-    unstable.php74Packages.composer
-    nodejs
+    php74
+    php74Packages.composer
+    nodejs-14_x	
     gnupg
     insomnia
     xclip

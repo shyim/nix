@@ -5,7 +5,6 @@
     xserver = {
       enable = true;
       windowManager = {
-        default = "i3";
         i3 = { 
           enable = true;
           package = pkgs.i3-gaps;
@@ -13,6 +12,7 @@
       };
 
       displayManager = {
+        defaultSession = "none+i3";
         lightdm = {
           autoLogin = {
             enable = true;
@@ -21,7 +21,6 @@
         };
       };
       desktopManager = {
-        default = "none";
         xterm = { enable = false; };
       };
     };

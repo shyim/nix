@@ -35,7 +35,7 @@ in
     allowDiscards = true;
   };
 
-  i18n.consoleKeyMap = "de";
+  console.keyMap = "de";
 
   networking.hostName = "aki";
   services.xserver.layout = "de";
@@ -43,10 +43,10 @@ in
   environment.systemPackages = [ nvidia-offload ];
   services.xserver.videoDrivers = [ "nvidia" ];
 
-  hardware.nvidia.optimus_prime = {
-    enable = true;
+  hardware.nvidia.prime = {
     intelBusId = "PCI:0:2:0";
     nvidiaBusId = "PCI:1:0:0";
+    sync.enable = true;
   };
 
   boot.kernelParams = [ "acpi_rev_override" ];
