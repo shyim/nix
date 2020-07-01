@@ -16,8 +16,7 @@ in
     ../modules/desktop
     ../modules/desktop/notebook.nix
     ../modules/work
-    ../modules/desktop/manager/i3.nix
-    ../modules/desktop/vpn.nix
+    ../modules/desktop/manager/pantheon.nix
   ];
 
   fileSystems."/".options = [ "noatime" "nodiratime" "discard" ];
@@ -35,10 +34,10 @@ in
     allowDiscards = true;
   };
 
-  console.keyMap = "de";
-
   networking.hostName = "aki";
-  services.xserver.layout = "de";
+  console.keyMap = "us";
+  services.xserver.layout = "us";
+  services.xserver.xkbVariant = "altgr-intl";
 
   environment.systemPackages = [ nvidia-offload ];
   services.xserver.videoDrivers = [ "nvidia" ];

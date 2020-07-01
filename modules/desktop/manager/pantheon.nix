@@ -21,7 +21,7 @@
     pantheon.contractor.enable = true;
   };
 
-  environment.systemPackages = with pkgs; [ gtk-engine-murrine ];
+  environment.systemPackages = with pkgs; [ gtk-engine-murrine pantheon.elementary-calendar ];
 
   environment.pantheon.excludePackages = [
     pkgs.pantheon.elementary-camera
