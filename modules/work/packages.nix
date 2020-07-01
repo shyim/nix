@@ -8,5 +8,7 @@
     ansible
     go-jira
     zoom-us
+    chromium
+    kubectl
   ];
 }
