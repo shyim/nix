@@ -9,8 +9,9 @@
   boot.loader.grub.device = "/dev/sda";
 
   networking.hostName = "lucina";
-  console.keyMap = "de";
-  services.xserver.layout = "de";
+  console.keyMap = "us";
+  services.xserver.layout = "us";
+  services.xserver.xkbVariant = "altgr-intl";
 
   environment.systemPackages = with pkgs; [ discord ];
 }

@@ -8,9 +8,10 @@
   boot.loader.grub.version = 2;
   boot.loader.grub.device = "/dev/sda";
 
-  networking.hostName = "yoko";
-  console.keyMap = "de";
-  services.xserver.layout = "de";
+  console.keyMap = "us";
+  services.xserver.layout = "us";
+  services.xserver.xkbVariant = "altgr-intl";
+  services.openssh.enable = true;
 
   virtualisation.vmware.guest.enable = true;
   environment.systemPackages = with pkgs; [ discord-ptb ];
