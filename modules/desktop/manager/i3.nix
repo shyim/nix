@@ -14,10 +14,6 @@
       displayManager = {
         defaultSession = "none+i3";
         lightdm = {
-          autoLogin = {
-            enable = true;
-            user = "shyim";
-          };
         };
       };
       desktopManager = {
@@ -34,6 +30,7 @@
     (polybar.override {
       i3Support = true;
       pulseSupport = true;
+      mpdSupport = true;
     })
     rofi
     arandr

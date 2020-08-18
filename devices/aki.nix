@@ -11,12 +11,11 @@ let
 in
 {
   imports = [
-    ../hardware-scans/aki.nix
     ../modules/base
     ../modules/desktop
     ../modules/desktop/notebook.nix
     ../modules/work
-    ../modules/desktop/manager/pantheon.nix
+    ../modules/desktop/manager/i3.nix
   ];
 
   fileSystems."/".options = [ "noatime" "nodiratime" "discard" ];
@@ -27,12 +26,6 @@ in
   boot.loader.grub.efiSupport = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.grub.gfxmodeEfi = "1024x768";
-
-  boot.initrd.luks.devices.root = {
-    device = "/dev/disk/by-uuid/357e67b2-546d-4632-b197-b03c6facf271";
-    preLVM = true;
-    allowDiscards = true;
-  };
 
   networking.hostName = "aki";
   console.keyMap = "us";
@@ -49,10 +42,13 @@ in
   };
 
   boot.kernelParams = [ "acpi_rev_override" ];
-  boot.extraModprobeConfig = "install nouveau /run/current-system/sw/bin/false";
+  boot.extraModprobeConfig = ''
+options hid_apple fnmode=2
+'';
 
   programs.adb.enable = true;
   services.fwupd.enable = true;
+  
 
   hardware.cpu.intel.updateMicrocode = true;
 

@@ -21,6 +21,7 @@
     xorg.xhost
     spotify
     discord
+    go
   ];
 
   fonts.fonts = with pkgs; [
