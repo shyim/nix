@@ -15,5 +15,6 @@
     lsd
     tmux
     starship
+    fd
   ];
 }

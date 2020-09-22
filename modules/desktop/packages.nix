@@ -5,14 +5,11 @@
   environment.systemPackages = with pkgs; [
     docker
     docker-compose
-    kbfs
-    keybase
-    keybase-gui
     google-chrome
     firefox
     vscode
     php74
-    php74Packages.composer
+    shyim.composer2
     nodejs-14_x	
     gnupg
     insomnia
@@ -21,7 +18,6 @@
     shellcheck
     fzf
     shyim.phpstorm
-    shyim.swdc
     xorg.xhost
     spotify
     discord

@@ -6,10 +6,6 @@
       enable = true;
       displayManager = {
         lightdm = {
-          autoLogin = {
-            enable = true;
-            user = "shyim";
-          };
           greeters.pantheon.enable = true;
         };
       };

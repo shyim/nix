@@ -13,7 +13,6 @@ in {
   environment = {
     variables = {
       EDITOR = "nvim";
-      TERMINAL = "kitty";
     };
 
     loginShellInit = ''
@@ -30,6 +29,9 @@ in {
     };
   };
 
-  # Use the fish shell.
-  programs.fish = { enable = true; };
+  # Use the zsh shell.
+  programs.zsh = {
+    enable = true;
+    autosuggestions.enable = true;
+  };
 }

@@ -25,10 +25,6 @@
       };
     };
 
-    keybase = { enable = true; };
-
-    kbfs = { enable = true; };
-
     gnome3 = { gnome-keyring = { enable = true; }; };
   };
 

@@ -2,7 +2,7 @@
 
 {
   imports =
-    [ ../modules/base ../modules/desktop ../modules/desktop/manager/i3.nix ];
+    [ ../modules/base ../modules/desktop ../modules/desktop/manager/pantheon.nix ];
 
   boot.loader.grub.enable = true;
   boot.loader.grub.version = 2;
