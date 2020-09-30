@@ -1,14 +1,16 @@
 { config, lib, pkgs, ... }:
 
+let
+    php = pkgs.php74.buildEnv { extraConfig = "memory_limit = 2G"; };
+  in 
 {
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
-    docker
     docker-compose
     google-chrome
     firefox
     vscode
-    php74
+    php
     shyim.composer2
     nodejs-14_x	
     gnupg

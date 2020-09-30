@@ -25,14 +25,6 @@
     "vm.max_map_count" = 262144;
   };
 
-  environment.etc."php.d/shyim.ini" = {
-    text = ''
-      memory_limit=2G
-          '';
-
-    mode = "0777";
-  };
-
   # The NixOS release version.
   system.stateVersion = "19.03";
 }

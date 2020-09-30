@@ -29,9 +29,8 @@ in {
     };
   };
 
-  # Use the zsh shell.
-  programs.zsh = {
+  # Use the fish shell.
+  programs.fish = {
     enable = true;
-    autosuggestions.enable = true;
   };
 }

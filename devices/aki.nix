@@ -27,6 +27,8 @@ in
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.grub.gfxmodeEfi = "1024x768";
 
+  swapDevices = [ { device = "/var/swap"; size = 16384; } ];
+
   networking.hostName = "aki";
   console.keyMap = "us";
   services.xserver.layout = "us";
@@ -56,4 +58,6 @@ options hid_apple fnmode=2
   services.dnsmasq.extraConfig = "address=/sw.shop/127.0.0.1";
   services.dnsmasq.servers = ["172.16.0.123" "172.16.0.124"];
   networking.resolvconf.useLocalResolver = true;
+  networking.firewall.enable = false;
+  services.udev.extraRules = ''SUBSYSTEM=="usb", ATTR{idVendor}=="0955", MODE="0664", GROUP="plugdev"'';
 }

@@ -8,10 +8,6 @@
       sddm = {
         enable = true;
         enableHidpi = true;
-        autoLogin = {
-          enable = true;
-          user = "shyim";
-        };
       };
     };
     desktopManager = { plasma5 = { enable = true; }; };

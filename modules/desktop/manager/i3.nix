@@ -13,14 +13,11 @@
 
       displayManager = {
         defaultSession = "none+i3";
-        lightdm = {
-        };
       };
       desktopManager = {
         xterm = { enable = false; };
       };
     };
-
     gnome3 = { gnome-keyring = { enable = true; }; };
   };
 

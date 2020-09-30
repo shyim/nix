@@ -12,7 +12,7 @@
       desktopManager = { pantheon.enable = true; };
     };
 
-    gnome3 = { gnome-keyring = { enable = true; }; };
+    gnome3 = { gnome-keyring = { enable = pkgs.lib.mkForce false; }; };
 
     pantheon.contractor.enable = true;
   };

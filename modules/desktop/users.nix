@@ -16,7 +16,7 @@
       "systemd-journal"
       "libvirtd"
     ];
-    shell = "/run/current-system/sw/bin/zsh";
+    shell = "/run/current-system/sw/bin/fish";
   };
 
   nix.trustedUsers = [ "root" "shyim" ];
