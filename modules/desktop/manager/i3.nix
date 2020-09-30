@@ -39,5 +39,6 @@
     networkmanagerapplet
     kitty
     escrotum
+    clipit
   ];
 }

@@ -8,7 +8,7 @@ let
   environment.systemPackages = with pkgs; [
     docker-compose
     google-chrome
-    firefox
+    firefox-devedition-bin
     vscode
     php
     shyim.composer2
@@ -24,6 +24,7 @@ let
     spotify
     discord
     go
+    appimage-run
   ];
 
   fonts.fonts = with pkgs; [
