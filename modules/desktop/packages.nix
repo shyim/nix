@@ -11,7 +11,7 @@ let
     firefox-devedition-bin
     vscode
     php
-    shyim.composer2
+    phpPackages.composer2
     nodejs-14_x	
     gnupg
     insomnia
@@ -20,6 +20,7 @@ let
     shellcheck
     fzf
     shyim.phpstorm
+    jetbrains.goland
     xorg.xhost
     spotify
     discord

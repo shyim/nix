@@ -9,4 +9,11 @@
       xfce.enable = true;
     };
   };
+
+  environment.systemPackages = with pkgs; [
+    arc-theme
+    escrotum
+    i3lock
+    rofi
+  ];
 }

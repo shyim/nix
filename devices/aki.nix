@@ -15,7 +15,7 @@ in
     ../modules/desktop
     ../modules/desktop/notebook.nix
     ../modules/work
-    ../modules/desktop/manager/i3.nix
+    ../modules/desktop/manager/xfce.nix
   ];
 
   fileSystems."/".options = [ "noatime" "nodiratime" "discard" ];
